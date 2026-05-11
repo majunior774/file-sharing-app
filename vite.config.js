@@ -5,5 +5,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
+    proxy:{
+      '/api': 'https://goon-valiant-fetal.ngrok-free.dev',
+    },
   },
 });

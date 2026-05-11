@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { BrowserRouter, Link, Route, Routes, useParams } from 'react-router-dom';
 import type { FileRecord, ShareMeta } from './types';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'https://goon-valiant-fetal.ngrok-free.dev/api';
+const API_BASE = import.meta.env.VITE_API_BASE || '/api';
 const heyy = 'Hello, World!';
 function buildTree(files: FileRecord[]) {
   const tree: Record<string, any> = {};
